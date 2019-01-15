@@ -1,0 +1,57 @@
+.top-bg
+  background: url('../images/general/header-bg.jpg') center no-repeat
+  background-size: cover
+  .container
+    min-height: 750px
+
+.top-banner__info
+  position: absolute
+  top: 30%
+  left: 0
+  width: 100%
+  max-width: 550px
+  text-align: left
+  font-family: $medium-font
+
+.top-banner__info, .top-banner__button
+  color: $main-font-color
+
+.top-banner__title
+  font-size: 90px
+  margin-bottom: 20px
+
+.top-banner__subtitle
+  display: block
+  font-size: 22px
+  opacity: .54
+  margin-bottom: 33px
+
+.top-banner__buttons
+  a
+    display: inline-block
+    line-height: 50px
+    font-family: $bold-font
+
+.top-banner__button
+  text-align: center
+  text-transform: uppercase
+  height: 50px
+  width: 160px
+  border: 1px solid $main-font-color
+  margin-right: 20px
+  transition: .4s
+
+  &:last-child
+     margin-right: 0
+  &:hover
+    border: 1px solid $white-color
+    background-color: $white-color
+    box-shadow: 0px 0px 40px 2px rgba(0,0,0,0.15)
+
+.top-banner__bg
+  display: flex
+  justify-content: flex-end
+  align-items: flex-end
+  height: 100%
+  min-height: 750px
+  margin-right: -25px

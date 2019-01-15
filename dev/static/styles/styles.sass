@@ -2,7 +2,8 @@
 @import "utils/_fonts.scss"
 @import "utils/_libs.sass"
 @import "utils/mixins/_mixins.sass"
-@import "section/about_me.sass"
+@import "section/_top-banner.sass"
+@import "section/_about-me.sass"
 
 
 
@@ -13,12 +14,13 @@
 
 
 html
-	font-size: $main-font-size
 	height: 100%
 
 
 body
-	height: 100% 
+	font-size: $main-font-size
+	height: 100%
+	color: $white-color
 
 h1, h2, h3, h4, h5, h6
 	margin: 0 
@@ -30,7 +32,8 @@ ul, li
 
 
 a
-	text-decoration: none 
+	text-decoration: none
+	color: $main-font-color
 
 p
 	margin: 0 
@@ -67,10 +70,11 @@ button
 .content
 	flex: 1 0 auto 
 
-.container 
+.container
+	position: relative
 	margin: 0 auto
 	max-width: $content-size
-	width: 100%
+	width: 97%
 
 
 
