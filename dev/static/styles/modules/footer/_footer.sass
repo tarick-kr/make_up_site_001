@@ -1,1 +1,51 @@
-footer.footer
+.footer
+  .bottom-bg-pic
+    background: url('../images/general/footer-bg-pic.jpg') center no-repeat
+    background-size: cover
+  .bottom-bg
+    background-color: black
+    opacity: .69
+    .container
+      height: 788px
+
+  .section-info
+    padding-top: 115px
+    color: $white-color
+    &__title::before
+      border-color: $white-color
+
+  .feedback-form
+    max-width: 770px
+    width: 100%
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+
+
+  .feedback-form__line
+    display: flex
+    justify-content: space-between
+    margin-bottom: 30px
+
+  .feedback-form__input
+    flex-basis: 370px
+    height: 60px
+    padding: 12px
+
+  .feedback-form__text
+    width: 100%
+    min-height: 210px
+    padding: 12px
+
+  .feedback-form__line--button
+    height: 50px
+    margin: 0 auto
+    &::after
+      content: url('../images/general/arrow.png')
+
+
+  .feedback-form__btn
+    font-family: $medium-font
+    line-height: 50px
+    text-transform: uppercase
+    min-width: 125px
