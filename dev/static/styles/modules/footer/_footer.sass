@@ -1,10 +1,13 @@
+@import "../../utils/_vars"
+
 .footer
+  position: relative
   .bottom-bg-pic
     background: url('../images/general/footer-bg-pic.jpg') center no-repeat
     background-size: cover
   .bottom-bg
-    background-color: black
-    opacity: .69
+    background-color: rgba(0,0,0,0.69)
+
     .container
       height: 788px
 
@@ -17,10 +20,9 @@
   .feedback-form
     max-width: 770px
     width: 100%
-    margin: 0 auto
+    margin: 0 auto 57px
     display: flex
     flex-direction: column
-
 
   .feedback-form__line
     display: flex
@@ -40,12 +42,81 @@
   .feedback-form__line--button
     height: 50px
     margin: 0 auto
+    position: relative
     &::after
       content: url('../images/general/arrow.png')
-
+      position: absolute
+      right: 47px
+      bottom: 14px
+      opacity: .82
 
   .feedback-form__btn
-    font-family: $medium-font
+    font-family: $bold-font
     line-height: 50px
     text-transform: uppercase
-    min-width: 125px
+    min-width: 166px
+    padding: 0 17px 0 0
+    border: none
+    background-color: $white-color
+    color: $main-font-color
+
+  .footer-bottom
+    &::before
+      content: ""
+      border: 1px solid $white-color
+      background-color: $white-color
+      display: block
+      opacity: .8
+      width: 100%
+      margin-bottom: 24px
+
+  .footer-bottom__social
+    float: left
+
+
+  .footer-bottom__social-links
+    li
+      display: inline-block
+      margin-right: 9px
+      background-color: $white-color
+      width: 28px
+      height: 28px
+      text-align: center
+      transition: .5s
+      &:hover
+        .svg-sprite-icon
+          fill: $white-color
+
+      a
+        display: block
+        width: 100%
+        height: 100%
+
+      .svg-sprite-icon
+        width: 18px
+        height: 28px
+        fill: $main-font-color
+
+  .footer-bottom__social-link--fb:hover
+    background-color: $facebook-color
+  .footer-bottom__social-link--tw:hover
+    background-color: $twitter-color
+  .footer-bottom__social-link--lin:hover
+    background-color: $linkedin-color
+  .footer-bottom__social-link--google:hover
+    background-color: $google-color
+  .footer-bottom__social-link--be:hover
+    background-color: $behance-color
+  .footer-bottom__social-link--drib:hover
+    background-color: $dribbble-color
+
+  .footer-bottom__text
+    float: right
+    color: $white-color
+    text-align: center
+    font-size: 17px
+    font-family: $logo-font
+    font-weight: bold
+    opacity: .9
+    span
+      line-height: 28px

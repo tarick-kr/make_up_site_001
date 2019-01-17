@@ -1,19 +1,27 @@
-.services
-  .section-info__title
-    margin-bottom: -20px
+@import "../../utils/_vars"
 
+.services
+  .section-items
+    align-items: flex-start
   .section-item
     flex-basis: 30%
     text-align: center
-    margin-top: 80px
     padding: 0 50px
     min-height: 142px
+    margin-bottom: 50px
+    &:nth-child(4)
+      margin-bottom: 0
+    &:nth-child(5)
+      margin-bottom: 0
+    &:nth-child(6)
+      margin-bottom: 0
     &__logo
-      margin: 0 auto
+      margin: 0 auto 20px
       width: 90px
       height: 90px
+      line-height: 90px
     &__description
-      display: inline-block
+      display: block
       font-size: 24px
       font-family: $medium-font
 

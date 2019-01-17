@@ -1,0 +1,43 @@
+@import "../../utils/_vars"
+
+.skills
+  .chart
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+  .chart-Y
+    display: inline-block
+    width: 12%
+
+  .chart-Y__item
+    height: 16%
+    font-size: 15px
+    span
+      display: block
+      width: 100%
+      height: 100%
+      text-align: right
+
+  .chart-img
+    display: inline-block
+    max-width: 80%
+    width: 100%
+    padding: 0
+    margin-right: 8%
+    img
+      width: 100%
+
+  .chart-X
+    max-width: 80%
+    width: 100%
+    display: block
+
+  .chart-X__item
+    display: inline-block
+    text-align: center
+    margin-right: calc(22% - 28px)
+    &:first-child
+      margin-left: 15%
+    &:last-child
+      margin-right: 0
