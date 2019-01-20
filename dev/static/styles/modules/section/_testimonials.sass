@@ -7,8 +7,8 @@
     max-width: 960px
     margin: 0 auto
     padding: 80px
-    opacity: .9
-
+  .section-body__info
+    flex-wrap: wrap
   .section-body__title
     font-size: 30px
     font-family: $medium-font
@@ -16,7 +16,13 @@
     opacity: .9
 
   .section-body__img
-    margin-right: 30px
+    max-width: 26%
+    img
+      width: 100%
+
+  .section-body__description
+    max-width: 70%
+    opacity: .9
 
   .section-body__title
     margin-bottom: 2px
@@ -28,7 +34,8 @@
     font-family: $italic-font
     text-transform: uppercase
 
-  .section_body__text
+  .section-body__text
     line-height: 25px
     text-transform: uppercase
     opacity: .9
+    text-align: justify

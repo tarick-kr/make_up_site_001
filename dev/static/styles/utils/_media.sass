@@ -2,19 +2,21 @@
 //
 //  MEDIA QUERIES
 //––––––––––––––––––––––––––––––––––––––––––––––––––
-// Медиа-запросы можно писать как в этом файле, так и в style.sass
-
-
-
-
-//-------------------------------------------------------------
 //
 //  RESPOND BELOW
 //––––––––––––––––––––––––––––––––––––––––––––––––––
-// (стили применятся от указанной ширины и меньше)
+// (стили будут применятся до указанной ширины)
 
 
 @media screen and (max-width: 980px)
+  // Глобальные стили ==========================
+  section
+    padding: 80px 0
+  .footer
+    .section-info
+      padding-top: 80px
+
+  // Локальные стили секций =====================
   .top-bg
     .container
       height: 650px
@@ -31,7 +33,31 @@
     .bg-pic
       height: 570px
 
+  .attainment
+    .section-item
+      padding: 0 10px
+      &__counter
+        font-size: 26px
+      &__description
+        font-size: 20px
+
+  .empty
+    height: 120px
+
+  .footer
+    .bottom-bg
+      .container
+        height: 745px
+
+@media screen and (max-width: 890px)
+  .testimonials
+    .section-body
+      padding: 49px
+
 @media screen and (max-width: 830px)
+  // Глобальные стили ==========================
+
+  // Локальные стили секций =====================
   .top-bg
     .container
       height: 590px
@@ -49,7 +75,14 @@
     .bg-pic
       height: 518px
 
+  .about
+    .section-img
+      flex-shrink: 1.3
+
 @media screen and (max-width: 770px)
+  // Глобальные стили ==========================
+
+  // Локальные стили секций =====================
   .skills
     .chart-Y__item
       span.hidden
@@ -58,6 +91,41 @@
       margin-right: calc(21% - 28px)
       &:first-child
         margin-left: 15%
+
+  .portfolio
+    .section-item
+      max-width: 40%
+
+  .attainment
+    .section-item
+      width: 50%
+      margin-bottom: 30px
+      &:nth-child(3)
+        margin-bottom: 0
+      &:nth-child(4)
+        margin-bottom: 0
+      &__description
+        width: 60%
+
+  .testimonials
+    .section-body
+      padding: 30px
+
+@media screen and (max-width: 730px)
+  .section-info__title
+    margin-bottom: 50px
+
+  .testimonials
+    .section-body
+      padding: 30px
+
+  .empty
+    height: 100px
+
+  .footer
+    .bottom-bg
+      .container
+        height: 715px
 
 @media screen and (max-width: 670px)
   .header
@@ -71,8 +139,22 @@
       left: 2%
       top: 25%
 
+  .testimonials
+    .section-body__text
+      font-size: 14px
 
-@media screen and (max-width: 610px)
+@media screen and (max-width: 620px)
+  // Глобальные стили ==========================
+  section
+    padding: 55px 0
+  .footer
+    .section-info
+      padding-top: 55px
+  .section-info__title
+    font-size: 41px
+    margin-bottom: 30px
+
+  // Локальные стили секций =====================
   .top-bg
     .top-banner__button
       background-color: rgba(255,255,255,0.9)
@@ -80,8 +162,71 @@
       &:hover
         box-shadow: 0 0 40px 2px rgba(0,0,0,0.45)
 
+  .about
+    .section-info__title--big
+      display: none
+    .wrapper-flex
+      flex-wrap: wrap
+      margin: 0 auto
+      max-width: 90%
+    .section-info__title--small
+      display: block
+      margin: 0 auto 30px
+      text-align: center
+      &::before
+        margin: 0 auto 10px
+    .section-info
+      margin: 0 0 20px
+      max-width: 100%
+    .section-img
+      margin-bottom: 35px
+    .section-info__text
+      margin: 0
+      max-width: 100%
+      text-align: justify
+    .section-info__btn--big
+      display: none
+    .section-info__btn--small
+      display: block
+      margin: 0 auto
+
+  .services
+    .section-item
+      &:nth-child(4)
+        margin-bottom: 50px
+      &__description
+        font-size: 19px
+
+  .footer
+    .footer-bottom
+      text-align: center
+    .footer-bottom__social, .footer-bottom__text
+      float: none
+    .footer-bottom__social
+      margin-bottom: 10px
+
+    .feedback-form__line
+      margin-bottom: 20px
+    .feedback-form__input
+      height: 50px
+      margin-right: 20px
+    .feedback-form__text
+      min-height: 190px
+
+    .bottom-bg
+      .container
+        height: 650px
 
 @media screen and (max-width: 580px)
+  // Глобальные стили ==========================
+  section
+    padding: 50px 0
+  .footer
+    .section-info
+      padding-top: 50px
+
+  // Локальные стили секций =====================
+
   .header
     padding-top: 25px
   .top-bg
@@ -99,13 +244,33 @@
         margin-left: 14%
 
 @media screen and (max-width: 520px)
+  // Глобальные стили ==========================
+
+  // Локальные стили секций =====================
   .top-bg
     .top-banner__info
       top: 21%
     .top-banner__bg
-       margin-right: -100px
+      margin-right: -100px
+
+  .services
+    .section-item
+      &__description
+        font-size: 16px
+
+  .portfolio
+    .section-item
+      max-width: 90%
+
+  .attainment
+    .section-item
+      &__description
+        width: 90%
 
 @media screen and (max-width: 460px)
+  // Глобальные стили ==========================
+
+  // Локальные стили секций =====================
   .top-bg
     .container
       height: 545px
@@ -115,7 +280,7 @@
       max-width: 348px
       top: 22%
     .top-banner__bg
-      min-height: 550px
+      min-height: 545px
     .bg-pic
       height: 450px
 
@@ -126,7 +291,51 @@
     .chart-Y__item
       height: 14%
 
+  .testimonials
+    .section-body__img
+      max-width: 100%
+      margin: 0 auto 5px
+
+    .section-body__description
+      max-width: 100%
+
+    .section-body__title, .section-body__subtitle
+      text-align: center
+
+  .empty
+    height: 80px
+
+  .footer
+    .feedback-form__line
+      flex-wrap: wrap
+    .feedback-form__input
+      width: 100%
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+
+    .bottom-bg
+      .container
+        height: 710px
+
+@media screen and (max-width: 420px)
+  .services
+    .section-item
+      min-width: 170px
+
+  .attainment
+    .section-item
+      width: 95%
+      &:nth-child(3)
+        margin-bottom: 30px
+
+
+
+
 @media screen and (max-width: 380px)
+  // Глобальные стили ==========================
+
+  // Локальные стили секций =====================
   .header
     padding-top: 20px
     .header-logo
@@ -146,11 +355,41 @@
       min-width: 65%
       margin: 0 0 15px
     .top-banner__bg
-      min-height: 530px
+      min-height: 525px
     .bg-pic
       height: 428px
+  .about
+    .section-info__text
+      line-height: 23px
+
+  .testimonials
+    .section-body
+      padding: 30px 10px
+
+@media screen and (max-width: 368px)
+  // Глобальные стили ==========================
+
+  // Локальные стили секций =====================
+  .services
+    .section-item
+      margin-bottom: 30px
+      &:nth-child(4)
+        margin-bottom: 30px
+      &:nth-child(5)
+        margin-bottom: 30px
+      &:nth-child(6)
+        margin-bottom: 0
 
 @media screen and (max-width: 350px)
+  // Глобальные стили ==========================
+  .section-info__title
+    font-size: 38px
+
+  // Локальные стили секций =====================
+  .services
+    .section-item
+      padding: 0 20px
+
   .skills
     .chart-Y__item
       height: 12%
@@ -161,7 +400,8 @@
       &:first-child
         margin-left: 12%
 
-
+  .empty
+    height: 60px
 
 
 
