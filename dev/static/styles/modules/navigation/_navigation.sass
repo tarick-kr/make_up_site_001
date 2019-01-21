@@ -1,0 +1,50 @@
+@import "../../utils/_vars"
+
+.hamburger
+	display: none
+	position: absolute
+	top: 13px
+	right: 0
+	padding-right: 0
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+		background-color: $main-font-color
+.hamburger.is-active
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+		background-color: $main-font-color
+
+
+
+.mm-panel
+	padding-top: 20px
+.mm-panel:before
+	height: 100px
+.mm-navbar
+  	border: none
+.mm-navbar__title
+		display: none
+.header-logo--m-menu
+	padding: 0
+	margin-top: 14px
+	span
+		display: block
+		text-transform: uppercase
+		line-height: 15px
+.logo-img--m-menu
+	margin-bottom: 10px
+.logo-title--m-menu
+	font-size: 15px
+	color: $black-color
+	opacity: .8
+.logo-subtitle--m-menu
+	font-size: 7px
+	color: $black-color
+	opacity: .8
+
+.mm-panels > .mm-panel > .mm-navbar + .mm-listview
+  	text-transform: uppercase
+
+
+
+
+
+

@@ -5,18 +5,32 @@ header
                 img(src='/static/images/general/logo.png')
             span.logo-title OENRIQUE
             span.logo-subtitle UX/UI EXPERT
-        nav.header-nav#headerNav
+        a(href="#my-menu").hamburger.hamburger--emphatic
+            span.hamburger-box
+                span.hamburger-inner
+        nav.header-nav--mobile#my-menu(data="mmenu")
+            ul.header-nav__list--mobile
+                li
+                    a(href="/about/") about
+                li.active
+                    a(href="/services/") services
+                li
+                    a(href="/skills/") skills
+                li
+                    a(href="/portfolio/") portfolio
+                li
+                    a(href="/contact/") contact
+        nav.header-nav
             ul.header-nav__list
                 li
-                    a(href="javascript:void(0);") menu
+                    a(href="#about") about
+                li.active
+                    a(href="#services") services
                 li
-                    a(href="javascript:void(0);") about
+                    a(href="#skills") skills
                 li
-                    a(href="javascript:void(0);") service
+                    a(href="#portfolio") portfolio
                 li
-                    a(href="javascript:void(0);") portfolio
-                li
-                    a(href="javascript:void(0);") contact
-
+                    a(href="#contact") contact
 
 
