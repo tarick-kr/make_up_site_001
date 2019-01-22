@@ -46,25 +46,21 @@ $(document).ready(function () {
 	});
 
 
-	$(document).ready(function(){
+	$(window).scroll(function(){
+	//Определяет положение полосы прокрутки и если ниже 100px, то появляется кнопка.
+		if ($(this).scrollTop() > 400) {
+			$('.scrollup').fadeIn();
+		} else {
+			$('.scrollup').fadeOut();
+		}
+	});
 
-		$(window).scroll(function(){
-		//Определяет положение полосы прокрутки и если ниже 100px, то появляется кнопка.
-			if ($(this).scrollTop() > 400) {
-				$('.scrollup').fadeIn();
-			} else {
-				$('.scrollup').fadeOut();
-			}
-		});
-
-		$('.scrollup').click(function(){
-		//Есть еще два значения:
-		//0 - страница будет прокручена до самого налача
-		//600 - скорость анимации прокрутки
-			$("html, body").animate({ scrollTop: 0 }, 600);
-			return false;
-		});
-
+	$('.scrollup').click(function(){
+	//Есть еще два значения:
+	//0 - страница будет прокручена до самого налача
+	//600 - скорость анимации прокрутки
+		$("html, body").animate({ scrollTop: 0 }, 600);
+		return false;
 	});
 
 
