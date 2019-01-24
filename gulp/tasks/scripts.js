@@ -1,5 +1,6 @@
 let uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
+	rename = require('gulp-rename'),
     scriptsPATH = {
         "input": "./dev/static/js/",
         "ouput": "./build/static/js/"
@@ -39,8 +40,8 @@ module.exports = function () {
     $.gulp.task('js:build-min', () => {
         return $.gulp.src([scriptsPATH.input + '*.js',
             '!' + scriptsPATH.input + 'libs.min.js'])
-            .pipe(concat('main.min.js'))
             .pipe(uglify())
+			.pipe(rename('main.min.js'))
             .pipe($.gulp.dest(scriptsPATH.ouput))
     });
 };

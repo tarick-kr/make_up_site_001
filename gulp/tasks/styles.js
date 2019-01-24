@@ -31,6 +31,7 @@ module.exports = function () {
                 browsers: ['last 3 version']
             }))
             .pipe(csscomb())
+			.pipe(rename('styles.css'))
             .pipe($.gulp.dest(stylesPATH.ouput))
     });
     $.gulp.task('styles:build-min', () => {

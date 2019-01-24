@@ -1,9 +1,9 @@
 {
   "name": "start-template",
-  "version": "1.0.0",
+  "version": "2.1.1",
   "description": "My start Template",
   "main": "index.js",
-  "author": "Salamatin Anatoliy",
+  "author": "Sergey Tarasov",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.3",
@@ -31,7 +31,7 @@
     "gulp-svgmin": "^2.1.0",
     "gulp-uglify": "^3.0.1",
     "imagemin-jpeg-recompress": "^5.1.0",
-    "imagemin-pngquant": "^6.0.0"
+    "imagemin-pngquant": "=6.0.0"
   },
   "dependencies": {
     "hamburgers": "^1.1.3",
